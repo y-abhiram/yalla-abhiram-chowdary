@@ -88,7 +88,7 @@ def home_page():
 # Function to display the next page with crop recommendation system
 def next_page():
     # Load the datasets
-    crop_data = pd.read_csv('/home/abhiram1289/Desktop/datasets/Crop_Details_all.csv')
+    crop_data = pd.read_csv('Crop_Details_all.csv')
 
     st.title("Comprehensive Crop Recommendation System")
 
@@ -194,12 +194,12 @@ if 'page' not in st.session_state:
     st.session_state.page = "home"
 
 if st.session_state.page == "home":
-    set_page_bg('/home/abhiram1289/Desktop/datasets/dd1.jpeg')  # Home page background
-    set_sidebar_bg('/home/abhiram1289/Desktop/datasets/dark1.jpeg')  # Home page sidebar
+    set_page_bg('dd1.jpeg')  # Home page background
+    set_sidebar_bg('dark1.jpeg')  # Home page sidebar
     home_page()
 elif st.session_state.page == "next":
-    set_page_bg('/home/abhiram1289/Desktop/datasets/dark1.jpeg')  # Next page background
-    set_sidebar_bg('/home/abhiram1289/Desktop/datasets/dd6.jpeg')  # Next page sidebar
+    set_page_bg('dark1.jpeg')  # Next page background
+    set_sidebar_bg('dd6.jpeg')  # Next page sidebar
     next_page()
 
 # Sidebar information for the next page
