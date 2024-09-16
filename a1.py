@@ -65,26 +65,26 @@ def home_page():
         st.session_state.page = "next"
     # Custom CSS to position text in the bottom left
 
-#    st.markdown(
-#     """
-#      <style>
-#     .bottom-right {
-#        position: fixed;
-#        bottom: 0;
-#       right: 0;
-#        padding: 10px;
-#        background-color:blue;
-#        border-top-left-radius: 10px;
-#        box-shadow: 0px -2px 5px rgba(0,0,0,0.2);
-#     }
-#     </style>
-#     <div class="bottom-right">
-#         Developed by:
-#      Y.Abhiram Chowdary 
-#      </div>
-#      """,
-#    unsafe_allow_html=True
-#)
+    st.markdown(
+     """
+      <style>
+     .bottom-right {
+        position: fixed;
+        bottom: 0;
+       right: 0;
+        padding: 10px;
+        background-color:blue;
+        border-top-left-radius: 10px;
+        box-shadow: 0px -2px 5px rgba(0,0,0,0.2);
+     }
+     </style>
+     <div class="bottom-right">
+         Developed by:
+      Y.Abhiram Chowdary 
+      </div>
+      """,
+    unsafe_allow_html=True
+)
 # Function to display the next page with crop recommendation system
 def next_page():
     # Load the datasets
