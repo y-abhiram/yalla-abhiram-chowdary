@@ -194,12 +194,12 @@ if 'page' not in st.session_state:
     st.session_state.page = "home"
 
 if st.session_state.page == "home":
-    set_page_bg('dd1.jpeg')  # Home page background
-    set_sidebar_bg('dark1.jpeg')  # Home page sidebar
+    set_page_bg('aa2.jpeg')  # Home page background
+    set_sidebar_bg('aa1.jpeg')  # Home page sidebar
     home_page()
 elif st.session_state.page == "next":
-    set_page_bg('dark1.jpeg')  # Next page background
-    set_sidebar_bg('dd6.jpeg')  # Next page sidebar
+    set_page_bg('ss2.jpeg')  # Next page background
+    set_sidebar_bg('ss1.jpeg')  # Next page sidebar
     next_page()
 
 # Sidebar information for the next page
